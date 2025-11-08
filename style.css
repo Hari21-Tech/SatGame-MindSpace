@@ -1,0 +1,279 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0B0E14;
+  color: #ffffff;
+  width: 100vw; 
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 700px;
+  height: 600px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+h1 {
+  font-size: 100px;
+  line-height: 90px;
+  margin-bottom: 70px;
+  background: #E0E6ED;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.game-box {
+  width: 720px;
+  height: 420px;
+  background :#121921;
+  border: 2px solid #00FFD1;
+  border-radius: 20px;
+  padding: 60px 40px;
+  box-shadow: 0 0 10px #00FFD1;
+  margin: 0 auto 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.description {
+  font-size: 45px;
+  margin-bottom: 40px;
+  color:#E0E6ED;
+}
+
+
+.string-display {
+  font-size: 40px;
+  height: 60px;
+  letter-spacing: 2px;
+  color: #E0E6ED;
+}
+
+
+.countdown {
+  font-size: 32px;
+  height: 50px;
+  color:#E0E6ED;
+  margin-bottom: 20px;
+}
+
+
+input {
+  width: 400px;
+  height: 50px;
+  padding: 15px;
+  border: 1px solid #00FFD1;
+  outline: none;
+  border-radius: 10px;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.07);
+  color: #ffffff;
+  transition: 0.2s ease;
+}
+
+input:focus {
+  border-color:#00FFD1;
+  box-shadow: 0 0 5px #00FFD1;
+}
+
+
+.btn {
+  width: 220px;
+  height: 50px;
+  background:#00FFD1; 
+  border: none;
+  border-radius: 10px;
+  color:  #0B0E14; 
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px #00FFD1;
+}
+
+
+.score {
+  font-size: 30px;
+  height: 30px;
+  margin-top: 20px;
+  color: #00FFD1;
+}
+
+
+.hidden {
+  display: none;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  /* background: #0B0E14; */
+   background-image: url('image.png');
+  background-size: cover;       
+  background-position: center;  
+  background-repeat: no-repeat; 
+  color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 700px;
+  height: 600px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 100px;
+  line-height: 90px;
+  margin-bottom: 50px;
+  background: #E0E6ED;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.game-box {
+  width: 700px;
+  min-height: 400px;
+  background: #121921;
+  border: 2px solid #00FFD1;
+  border-radius: 20px;
+  padding: 60px 40px;
+  box-shadow: 0 0 10px #00FFD1;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #E0E6ED;
+}
+
+.string-display {
+  font-size: 36px;
+  height: 50px;
+  letter-spacing: 2px;
+  color: #E0E6ED;
+}
+
+.countdown {
+  font-size: 28px;
+  height: 40px;
+  color: #E0E6ED;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 400px;
+  height: 50px;
+  padding: 15px;
+  border: 1px solid #00FFD1;
+  outline: none;
+  border-radius: 10px;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.07);
+  color: #ffffff;
+  transition: 0.2s ease;
+}
+
+input:focus {
+  border-color: #00FFD1;
+  box-shadow: 0 0 5px #00FFD1;
+}
+
+.btn {
+  width: 220px;
+  height: 50px;
+  background: #00FFD1;
+  border: none;
+  border-radius: 10px;
+  color: #0B0E14;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+
+.score {
+  font-size: 28px;
+  height: 30px;
+  margin-top: 20px;
+  color: #00FFD1;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+#game-over h2 {
+  font-size: 50px;   /* Bigger "Game Over" text */
+  margin-bottom: 30px;
+  color: #FF4C4C;    /* Optional: red-ish to highlight game over */
+}
+
+#game-over p {
+  font-size: 28px;   /* Score text size */
+  margin-bottom: 40px; /* Gap between score and button */
+  color: #00FFD1;
+}
+
+#game-over button {
+  width: 220px;
+  height: 50px;
+  background: #00FFD1;
+  border: none;
+  border-radius: 10px;
+  color: #0B0E14;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+}
+

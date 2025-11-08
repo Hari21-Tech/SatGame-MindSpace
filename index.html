@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MindSprint</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>MindSprint</h1>
+
+    <!-- Start Screen -->
+    <div id="start-screen" class="game-box">
+      <p class="description">Test your memory speed </p>
+      <button class="btn" onclick="startGame()">Start Now</button>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="game-screen" class="game-box hidden">
+      <div id="countdown" class="countdown"></div>
+      <div id="stringDisplay" class="string-display"></div>
+      <input type="text" id="userInput" placeholder="Type the string here" class="hidden" />
+      <button class="btn hidden" id="submitBtn" onclick="checkAnswer()">Submit</button>
+      <div id="scoreDisplay" class="score"></div>
+    </div>
+
+    <!-- Game Over Screen -->
+    <div id="game-over" class="game-box hidden">
+      <h2>Game Over</h2>
+      <p>Your final score: <span id="finalScore"></span></p>
+      <button class="btn" onclick="restartGame()">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
