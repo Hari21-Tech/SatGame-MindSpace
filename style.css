@@ -128,7 +128,8 @@ input:focus {
 .hidden {
   display: none;
 } */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap'); */
 
 * {
   margin: 0;
@@ -138,8 +139,8 @@ input:focus {
 }
 
 body {
-  /* background: #0B0E14; */
-   background-image: url('image.png');
+  background: #0B0E14;
+   /* background-image: url('image.png'); */
   background-size: cover;       
   background-position: center;  
   background-repeat: no-repeat; 
@@ -276,4 +277,11 @@ input:focus {
   font-size: 18px;
   cursor: pointer;
 }
+.level-display {
+  font-size: 28px;
+  font-weight: 600;
+  color: #00FFD1;
+  margin-bottom: 15px;
+}
+
 
