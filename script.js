@@ -81,12 +81,12 @@ function nextRound() {
   submitBtn.classList.add("hidden");
   countdownEl.textContent = "";
 
-  // Difficulty logic: choose charset & length
-  let charSetIndex = Math.min(round - 1, charSets.length - 1);
+  // Difficulty logic: choose charset & length (now based on level, not round)
+  let charSetIndex = Math.min(level - 1, charSets.length - 1);
   let charSet = charSets[charSetIndex];
 
-  // String length increases slightly each level
-  let length = 3 + (level - 1) * 2 + Math.floor((questionInLevel - 1) * 0.5);
+  // String length increases with level (slightly tougher from level 1)
+  let length = 4 + (level - 1) * 2 + Math.floor((questionInLevel - 1) * 0.5);
 
   currentString = generateRandomString(length, charSet);
   stringDisplay.textContent = currentString;
@@ -104,13 +104,14 @@ function nextRound() {
       userInput.classList.remove("hidden");
       submitBtn.classList.remove("hidden");
       userInput.focus();
-      startTypingTimer();
+      // typing time scales with level (higher level = less time), minimum 3s
+      startTypingTimer(Math.max(3, 6 - level));
     }
   }, 1000);
 }
 
-function startTypingTimer() {
-  let timeLeft = 5;
+function startTypingTimer(typingSeconds = 5) {
+  let timeLeft = typingSeconds;
   countdownEl.textContent = timeLeft;
 
   typingTimer = setInterval(() => {
